@@ -1,3 +1,5 @@
-@use 'normalize.css';
-@use './base/_global.scss';
-@use './modules/_large-hero.scss';
+@import 'normalize.css';
+@import './base/variables';
+@import './base/global';
+@import './modules/large-hero';
+@import './modules/btn';
