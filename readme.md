@@ -82,3 +82,6 @@ Note:
 ```
 
 ---
+
+Add border bottom to .large-hero
+.large-hero\_\_image - display to block
