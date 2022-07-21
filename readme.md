@@ -26,8 +26,8 @@ btn--orange -Block and Modifier
 
 ```
 @media(min-width: 530px){
-
-    }
+    <!-- style here -->
+}
 ```
 
 #### Mixins
@@ -85,3 +85,10 @@ Note:
 
 Add border bottom to .large-hero
 .large-hero\_\_image - display to block
+
+---
+
+#### Analyze design pattern reusable blocks
+
+\_page-section.scss - top and bottom padding on every other sections
+\_wrapper.scss - sets max-width, centers and padding left and right
