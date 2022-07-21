@@ -19,3 +19,33 @@ text-decoration: none - removes the underline
 
 btn - Block
 btn--orange -Block and Modifier
+
+#### Mobile first
+
+- if the screen is larger than 530px
+
+```
+@media(min-width: 530px){
+
+    }
+```
+
+#### Mixins
+
+base/\_mixins.scss
+
+```
+@mixin atSmall {
+  @media (min-width: 530px) {
+    @include atSmall;
+  }
+}
+```
+
+modules/\_large-hero.scss
+
+```
+ @include atSmall {
+      font-size: 4.8rem;
+    }
+```
