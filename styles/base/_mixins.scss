@@ -1,5 +1,5 @@
-@mixin atSmall {
+@mixin atSmall($font) {
   @media (min-width: 530px) {
-    @include atSmall;
+    font-size: $font;
   }
 }

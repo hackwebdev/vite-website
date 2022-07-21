@@ -35,9 +35,9 @@ btn--orange -Block and Modifier
 base/\_mixins.scss
 
 ```
-@mixin atSmall {
+@mixin atSmall($font) {
   @media (min-width: 530px) {
-    @include atSmall;
+    font-size: $font;
   }
 }
 ```
@@ -45,7 +45,40 @@ base/\_mixins.scss
 modules/\_large-hero.scss
 
 ```
- @include atSmall {
-      font-size: 4.8rem;
-    }
+ @include atSmall(4.8rem);
 ```
+
+#### Responsive Images
+
+- the way image is cropped
+- send different image files
+
+###### Responsive image situations
+
+1. Art direction & cropping situation
+
+```
+<picture>
+    <source srcset="images/dog-crop-large.jpg" media="min-width:1200px" />
+    <source srcset="images/dog-crop-medium.jpg" media="min-width:760px" />
+    <img src="/images/dog-crop-small.jpg" alt="puppy" />
+</picture>
+```
+
+Note:
+
+> source media query 760px and above use medium image
+> min-width means minimum width and above value
+
+2. Image resolution & size situation (faster load times)
+
+- image source and width assign - browser will automatically decide
+
+```
+ <img
+      src="/images/dog-crop-small.jpg 570w,/images/dog-crop-medium.jpg 1200w,/images/dog-crop-large.jpg 1920w"
+      alt="puppy"
+ />
+```
+
+---
