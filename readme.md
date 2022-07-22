@@ -92,3 +92,7 @@ Add border bottom to .large-hero
 
 \_page-section.scss - top and bottom padding on every other sections
 \_wrapper.scss - sets max-width, centers and padding left and right
+
+---
+
+headline block uses reusable css class modifiers
