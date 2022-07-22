@@ -3,3 +3,8 @@
     font-size: $font;
   }
 }
+@mixin atMedium($padding1, $padding2) {
+  @media (min-width: 530px) {
+    padding: $padding1, $padding1;
+  }
+}
